@@ -84,6 +84,22 @@ for samplename in df[1].values:
     #print(r)
 
     outputmat.to_csv(f'csv_files/prediction/{samplename}.csv', index=False)#scratch
+
+    # copy number correction
+    cnv=pd.read_csv(f'cnvkitcna/{samplename}_genes.mean.bed')
+    corrmat=pd.merge(outputmat,cnv,on='gene_id',how='left')
+   
+    # Condition: copynumber between 1 and 3 (exclusive)
+    condition = (corrmat['copynumber'] > 1) & (corrmat['copynumber'] < 3)
+
+    # Apply conditionally
+    corrmat['correction'] = np.where(
+        condition,
+        corrmat['Prediction'],  # if copynumber in (1,3), use Prediction
+        np.log2(np.power(2, corrmat['Prediction']) * corrmat['copynumber'] / 2)  # else compute correction
+    )
+
+    corrmat.to_csv(f'csv_files/prediction/{samplename}_correction.csv',index=False)
     
     # #gt=np.log2(test1['TPM']+1)
     # #gt = gt.values.reshape(-1, 1)
