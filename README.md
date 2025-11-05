@@ -3,7 +3,7 @@
 
 ## Requirements
 python3
-- job_lock
+job_lock
 ```
 pip install slurm-python-utils
 ```
