@@ -83,7 +83,7 @@ for samplename in df[1].values:
     #r, p = scipy.stats.pearsonr(np.log2(outputmat['TPM']+1),outputmat['Prediction'])
     #print(r)
 
-    outputmat.to_csv(f'csv_files/prediction/{samplename}.csv', index=False)#scratch
+    outputmat.to_csv(f'csv_files/prediction/{samplename}_pred.csv', index=False)#scratch
 
     # copy number correction
     cnv=pd.read_csv(f'cnvkitcna/{samplename}_genes.mean.bed')
