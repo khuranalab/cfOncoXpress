@@ -1,7 +1,9 @@
-# cfOncoPath
+# cfOncoXpress
+<img width="1298" height="904" alt="image" src="https://github.com/user-attachments/assets/35dfe397-a334-4fdb-965b-7cb4e8085b69" />
+
 ## Requirements
-python3
-- job_lock
+python3 <br/>
+job_lock
 ```
 pip install slurm-python-utils
 ```
@@ -22,7 +24,7 @@ cfDNA_simpson_DTB-097-Progression.sh
 cfDNA_features_DTB-097-Progression.sh
 cfDNA_mat_DTB-097-Progression.sh
 ```
-## Running the model
+## Running the model: SVR regression + copy number correction
 ```
 experiments.sh
 ```
@@ -30,7 +32,7 @@ experiments.sh
 ```
 results.sh
 ```
-## Figures for ISMB 2025
+## Figures
 <a href='ismb2025figs.ipynb' target='_new'>ismb2025figs.ipynb</a>
 ```
 gsea_barplot.R
