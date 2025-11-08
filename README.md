@@ -32,7 +32,7 @@ experiments.sh
 ```
 results.sh
 ```
-## hyperparameter tunning: optuna/
+## hyperparameter tunning using optuna: optuna/
 ## Figures
 figures.ipynb<br/>
 supp.figures.ipynb<br/>
