@@ -1,0 +1,33 @@
+producer_class	xtools.gsea.Gsea
+producer_timestamp	1753305817769
+param	zip_report	false
+param	num	100
+param	scoring_scheme	weighted
+param	norm	meandiv
+param	out	/Users/wel4007/gsea_home/output/jul23
+param	mode	Max_probe
+param	include_only_symbols	true
+param	set_max	500
+param	gmx	/Users/wel4007/Downloads/gseainput_bak/h.fy.mbc.2.gmt
+param	plot_top_x	20
+param	nperm	1000
+param	order	descending
+param	rnd_seed	timestamp
+param	rpt_label	ne_allrest26_more
+param	set_min	1
+param	res	/Users/wel4007/Downloads/gseainput_bak/pbmc.prostate.breast26.minmax.txt
+param	create_svgs	false
+param	cls	/Users/wel4007/Downloads/gseainput_bak/pbmc.prostate.breast26.cls#CRPC-NE_versus_REST
+param	sort	real
+param	create_gcts	false
+param	help	false
+param	save_rnd_lists	false
+param	median	false
+param	metric	Diff_of_Classes
+param	make_sets	true
+param	rnd_type	no_balance
+param	gui	false
+param	permute	gene_set
+param	collapse	No_Collapse
+
+file	/Users/wel4007/gsea_home/output/jul23/ne_allrest26_more.Gsea.1753305817769/index.html
