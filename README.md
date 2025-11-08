@@ -33,10 +33,10 @@ experiments.sh
 results.sh
 ```
 ## Figures
-<a href='ismb2025figs.ipynb' target='_new'>ismb2025figs.ipynb</a>
-```
+figures.ipynb<br/>
+supp.figures.ipynb<br/>
 gsea_barplot.R
-```
+
 
 ![License](https://img.shields.io/badge/license-CC--BY--NC%204.0-lightgrey.svg)
 
