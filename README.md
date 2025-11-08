@@ -32,7 +32,8 @@ experiments.sh
 ```
 results.sh
 ```
-## hyperparameter tunning using optuna: optuna/
+## Hyperparameter tunning using optuna: optuna/
+## Pathway enrichment analysis: GSEA/
 ## Figures
 figures.ipynb<br/>
 supp.figures.ipynb<br/>
